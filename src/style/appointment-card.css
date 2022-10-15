@@ -22,12 +22,16 @@
     color:#FFC920;
 }
 
-#Appointment-card::-webkit-scrollbar{
+#Appointment-card::-webkit-scrollbar,#AppointmentNav::-webkit-scrollbar{
     width: 4px;
     height: 4px;
     background-color: transparent;
+
 }
 
-#Appointment-card::-webkit-scrollbar-thumb{
+#Appointment-card::-webkit-scrollbar-thumb,#AppointmentNav::-webkit-scrollbar-thumb{
     background-color: #FFC920;
+}
+#AppointmentNav{
+    overflow-x: auto;
 }
