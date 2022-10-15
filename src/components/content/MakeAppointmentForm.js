@@ -3,11 +3,14 @@ import React from 'react';
 const MakeAppointmentForm = () => {
     return(
         <form id="Make-appointment-form" className="d-flex flex-column">
-        <div className="d-flex flex-row">
-            <input type="text" className="input-placeholder" placeholder="Начало работы"></input>
-            <input type="text" className="input-placeholder" placeholder="Конец работы"></input>
+        <div id="dateTime" className="d-flex flex-column">
+        <label>Начало работы </label>
+                <input type="datetime-local" name="date"/>
+        <label>Конец работы </label>
+                <input type="datetime-local" name="date"/>
         </div>
-        <div className="d-flex flex-row">
+        <div className="d-flex flex-column">
+        <label>Выбор ТС </label>
             <select>
                 <option>
                     Машинка 1
@@ -28,9 +31,9 @@ const MakeAppointmentForm = () => {
                 </option>
             </select>
         </div>
-        <div className="d-flex flex-row">
+        <div className="d-flex flex-column">
             <input type="text" className="input-placeholder" placeholder="ФИО ответственного"></input>
-            <button type='submit'>Оформить</button>
+            <button type='submit' className='w-25 ms-auto mt-3'>Оформить</button>
         </div>
     </form>
     )

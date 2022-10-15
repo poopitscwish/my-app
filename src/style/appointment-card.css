@@ -79,4 +79,9 @@
     overflow: auto;
 }
 
-
+#Make-appointment-form>div>label{
+    color: white;
+}
+#Make-appointment-form>div,input,select{
+    margin: 4px;
+}
