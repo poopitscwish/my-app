@@ -3,6 +3,8 @@ import { useLocation } from 'react-router-dom'
 
 import { routes } from '../../globalConst'
 import HistoryListItem from './HistoryListItem.js' 
+import MakeAppointmentForm from './MakeAppointmentForm'
+
 const AppointmentContent = () => {
     const location = useLocation();
     const generator=()=>{
@@ -32,7 +34,7 @@ const AppointmentContent = () => {
             <tbody>
             {
                 location.pathname==routes.history? 
-                    generator():null
+                    generator():<MakeAppointmentForm />
             }
             </tbody>
         </table>
