@@ -30,10 +30,10 @@ const AppointmentContent = () => {
         return items
     }
     return(
-        <div id="Appointment-content" className="mt-4 d-flex flex-column ms-3 me-3">
+        <div id="Appointment-content" className="mt-4 d-flex flex-column">
             {
                 location.pathname==routes.history? 
-                <table>
+                <table className='mb-3'>
                     <tbody>
                         {
                             generator()

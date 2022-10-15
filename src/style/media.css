@@ -1,10 +1,17 @@
 @media screen and (max-width: 1000px){
+    body{
+        overflow-y: auto;
+    }
     #Appointment-card{
         flex-direction: column;
     }
 
     #Appointment-card > div:first-child{
         width: 100%;
+    }
+    #Appointment-content{
+        overflow-y: hidden;
+        height: auto;
     }
     #User>i{
         font-size: 1em;
