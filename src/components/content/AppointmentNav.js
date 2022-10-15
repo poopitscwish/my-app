@@ -1,28 +1,23 @@
 import React from 'react'
 
+import useButtonsPane from '../../hooks/useButttonsPane';
+import { paneTemplates } from '../../globalConst';
+
 function AppointmentNav() {
     const [navStatus,changeNavStatus]=React.useState(false);
+    const getPane = useButtonsPane();
+
     window.onresize=()=>{
-        changeNavStatus(window.innerWidth>1000? true:false);
+        changeNavStatus(window.innerWidth <= 1000? true : false);
     };
-  return (
-    <div id='AppointmentNav' className='d-flex flex-row justify-content-around'>
+
+    return(
+      <div id='AppointmentNav' className='d-flex flex-row justify-content-around'>
         {
-            navStatus?
-
-            
-            // <i class="fa-solid fa-note"></i>
-            // <i class="fa-regular fa-note"></i>
-            // <button type='button' className='me-4 p-2'>
-            //     Оформить заявку
-            // </button>
-
-            // <button type='button' className='p-2'>
-            //     История заявок
-            // </button>
+          getPane(navStatus? paneTemplates.navigation_mobile : paneTemplates.navigation)
         }
-    </div>
-  )
+      </div>
+    )
 }
 
 export default AppointmentNav
