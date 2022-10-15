@@ -1,12 +1,13 @@
-#Logo>I,#User>I{
+#User>i{
     font-size: 2.5em;
 }
 #User>span{
     font-family: 'Oswald', sans-serif;
     /* color:#f9f4ec; */
     color: #FFC920;
+    margin-right: 30px;
 }
-#Novbar{
+#Navbar{
     background-color: #4C4F50;
 }
 #Logo{
