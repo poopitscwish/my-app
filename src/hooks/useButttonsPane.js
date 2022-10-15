@@ -1,4 +1,4 @@
-import { paneTemplates } from "../globalConstants";
+import { paneTemplates } from "../globalConst";
 
 const useButtonsPane = (template) => {
     const buttonsPane = [];
