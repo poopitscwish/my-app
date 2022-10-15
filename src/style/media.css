@@ -1,13 +1,22 @@
 @media screen and (max-width: 1000px){
-    #Logo > img{
-        transform: scale(0.5);
-    }
-
     #Appointment-card{
         flex-direction: column;
     }
 
     #Appointment-card > div:first-child{
         width: 100%;
+    }
+    #User>i{
+        font-size: 1em;
+    }
+    #User>span{
+        font-size: 1em;
+    }
+    #Logo{
+        padding: 0; 
+        margin: 0;
+    }
+    #User{
+        margin-left: auto;
     }
 }

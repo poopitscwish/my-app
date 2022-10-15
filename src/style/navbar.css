@@ -6,7 +6,7 @@
     font-family: 'Oswald', sans-serif;
     /* color:#f9f4ec; */
     color: #FFC920;
-    margin-right: 30px;
+    margin-right: 5px;
 }
 
 #Navbar{
@@ -14,8 +14,10 @@
 }
 
 #Logo{
-    background-color: #FFC920;
-    color: #4C4F50;
+    background-color:#4C4F50;
+    padding: 4px;
+    margin-right: auto;
+
 }
 
 #Logo > img{
@@ -23,5 +25,7 @@
 }
 
 #User>i{
+    margin-left: 4px; 
+    margin-right: 16px;
     color: #FFC920;
 }

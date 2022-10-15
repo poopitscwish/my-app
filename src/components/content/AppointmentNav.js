@@ -4,7 +4,7 @@ import useButtonsPane from '../../hooks/useButttonsPane';
 import { paneTemplates } from '../../globalConst';
 
 function AppointmentNav() {
-    const [navStatus,changeNavStatus]=React.useState(false);
+    const [navStatus,changeNavStatus]=React.useState(window.innerWidth <= 1000? true : false);
     const getPane = useButtonsPane();
 
     window.onresize=()=>{
