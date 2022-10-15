@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../style/media.css';
 import Navbar from './navbar/Navbar';
 import ContentWrap from './content/ContentWrap';
 import '../style/body.css';
