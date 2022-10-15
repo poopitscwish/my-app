@@ -1,10 +1,10 @@
 import React from "react";
 import {Switch, Route } from 'react-router-dom';
 
-import '../style/media.css';
 import Navbar from './navbar/Navbar';
 import ContentWrap from './content/ContentWrap';
 import '../style/body.css';
+import '../style/media.css';
 import { routes } from "../globalConst";
 
 const App =()=>{

@@ -8,7 +8,7 @@ const AppointmentCard = () => {
     return(
         <div id="Appointment-card" className="d-flex flex-column pt-2 col-5">
             <AppointmentNav/>
-            {/* <AppointmentContent> */}
+            <AppointmentContent />
         </div>
     )
 }

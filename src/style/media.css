@@ -1,7 +1,9 @@
-@media screen and (max-width:1000px){
-
-    #AppointmentNav{
-        
+@media screen and (max-width: 1000px){
+    #Content-wrap{
+        flex-direction: column;
     }
 
+    #Appointment-card{
+        width: 100%;
+    }
 }

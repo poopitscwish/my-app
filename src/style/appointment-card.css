@@ -1,6 +1,7 @@
 #Appointment-card{
     background-color: #4C4F50;
     box-shadow: 0 0 5px #000000aa;
+    width: auto;
 }
 
 #AppointmentNav>button, #AppointmentNav > i{
@@ -20,16 +21,16 @@
     color:#FFC920;
 }
 
-#AppointmentNav{
-    overflow-x: auto;
-}
-
-#AppointmentNav::-webkit-scrollbar{
-    width: 8px;
-    height: 8px;
+#AppointmentNav::-webkit-scrollbar, #Appointment-content::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
     background-color: transparent;
 }
 
-#AppointmentNav::-webkit-scrollbar-thumb{
+#AppointmentNav::-webkit-scrollbar-thumb, #Appointment-content::-webkit-scrollbar-thumb{
     background-color: #FFC920;
+}
+
+#Appointment-content{
+    overflow-y: auto;   
 }
