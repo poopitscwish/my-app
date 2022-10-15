@@ -10,11 +10,11 @@ import { routes } from "../globalConst";
 const App =()=>{
     return (
         <div id='App' className="d-flex flex-column">
+            <Navbar />
             <Switch>
-                <Route path={ routes.main }>
-                    <Navbar />
-                    <ContentWrap />    
-                </Route>
+                <Route exact path={ routes.main } render={ ContentWrap } />
+                <Route exact path={ routes.main } render={ ContentWrap } />
+                <Route exact path={ routes.main } render={ ContentWrap } />
             </Switch>
         </div>
     )
