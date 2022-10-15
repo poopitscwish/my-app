@@ -8,7 +8,7 @@ function Logo() {
   const history = useHistory();
 
   return (
-    <div id="Logo" className="d-flex flex-row col-3 p-1">
+    <div id="Logo" className="d-flex flex-row col-3 p-2">
         <img src={ appLogo } alt="app-logo" className="w-50 me-auto ms-auto"  onClick={ () => history.push(routes.main) } />
     </div>
   )

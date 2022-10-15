@@ -4,7 +4,7 @@ import User from './User';
 import '../../style/navbar.css';
 const Navbar = () => {
   return (
-    <div id='Navbar' className="d-flex flex-row ">
+    <div id='Navbar' className="d-flex flex-row">
         <Logo />
         <User />
     </div>
