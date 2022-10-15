@@ -35,3 +35,13 @@
 #AppointmentNav{
     overflow-x: auto;
 }
+.HistoryListItem>span{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin-right: 30px;
+}
+.HistoryListItem>span:last-child{
+    margin-right: 0;
+}
+

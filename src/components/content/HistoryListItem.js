@@ -1,28 +1,24 @@
 import React from 'react'
 
-function HistoryListItem(props) {
+function HistoryListItem(props){
   return (
-    <div className='HistoryListItem d-flex flex-row'>
-        <span>
+    <div className='HistoryListItem d-flex flex-row align-items-center'>
             {
                 props.itemprops.dateTime
             }
-        </span>
-        <span>
+        
             {
                 props.itemprops.transport
             }
-        </span>
-        <span>
-            {
+        
+        {
                 props.itemprops.workType
             }
-        </span>
-        <span>
-            {
+        
+        {
                 props.itemprops.fullname
             }
-        </span>
+        
     </div>
   )
 }
