@@ -2,6 +2,7 @@ import React from "react";
 
 import Navbar from './navbar/Navbar';
 import ContentWrap from './content/ContentWrap';
+import '../style/body.css';
 
 const App =()=>{
     return (
