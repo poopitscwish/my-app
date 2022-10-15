@@ -12,7 +12,7 @@ function AppointmentNav() {
     };
 
     return(
-      <div id='AppointmentNav' className='d-flex flex-row justify-content-around mt-2'>
+      <div id='AppointmentNav' className='d-flex flex-row justify-content-around mt-3'>
         {
           getPane(navStatus? paneTemplates.navigation_mobile : paneTemplates.navigation)
         }

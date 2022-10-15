@@ -24,6 +24,11 @@ export const paneTemplates={
             route: routes.create
         },
         {
+            key: "map",
+            icon: "fa-regular fa-map-location-dot",
+            route: routes.main
+        },
+        {
             key: "history",
             icon: "fa-regular fa-clock",
             route: routes.history

@@ -1,9 +1,13 @@
 @media screen and (max-width: 1000px){
-    #Content-wrap{
-        flex-direction: column;
+    #Logo > img{
+        transform: scale(0.5);
     }
 
     #Appointment-card{
+        flex-direction: column;
+    }
+
+    #Appointment-card > div:first-child{
         width: 100%;
     }
 }
