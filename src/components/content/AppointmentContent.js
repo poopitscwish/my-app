@@ -30,14 +30,20 @@ const AppointmentContent = () => {
         return items
     }
     return(
-        <table bordercolor="white" border="1" id="Appointment-content" className="mt-4 d-flex flex-column ms-3 me-3 p-2">
-            <tbody>
+        <div bordercolor="white" border="1" id="Appointment-content" className="mt-4 d-flex flex-column ms-3 me-3 p-2">
             {
                 location.pathname==routes.history? 
-                    generator():<MakeAppointmentForm />
+                <table>
+                    <tbody>
+                        {
+                            generator()
+                        }
+                    </tbody>
+                </table>
+                :
+                <MakeAppointmentForm />
             }
-            </tbody>
-        </table>
+        </div>
     )
 }
 
