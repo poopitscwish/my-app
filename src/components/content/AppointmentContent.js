@@ -30,7 +30,7 @@ const AppointmentContent = () => {
         return items
     }
     return(
-        <div id="Appointment-content" className="mt-4 d-flex flex-column">
+        <div id="Appointment-content" className="mt-4 d-flex flex-column" style={{border:location.pathname==routes.history? '2px solid white':'none'}}>
             {
                 location.pathname==routes.history? 
                 <table className='mb-3'>
