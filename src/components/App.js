@@ -13,8 +13,8 @@ const App =()=>{
             <Navbar />
             <Switch>
                 <Route exact path={ routes.main } render={ ContentWrap } />
-                <Route exact path={ routes.main } render={ ContentWrap } />
-                <Route exact path={ routes.main } render={ ContentWrap } />
+                <Route exact path={ routes.history } render={ ContentWrap } />
+                <Route exact path={ routes.create } render={ ContentWrap } />
             </Switch>
         </div>
     )
