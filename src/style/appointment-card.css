@@ -35,42 +35,48 @@
 #AppointmentNav{
     overflow-x: auto;
 }
-.HistoryListItem>th{
-    height: 200%;
+.HistoryListItem>th, .HistoryListItem>td{
     text-align: center;
-    color: white;
     font-family: 'Roboto', sans-serif;
+    margin: auto;
+    border-right: 2px solid white;
+}
+.HistoryListItem>th{
     font-size: 1.05em;
-    padding: 5px;
 }
 .HistoryListItem>td{
-    height: 200%;
-    text-align: center;
-    color: white;
-    font-family: 'Roboto', sans-serif;
     font-size: 1em;
 }
 
 .HistoryListItem{
-    padding-left: 40px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid white;
+    cursor: pointer;
+    padding-bottom: 10px;
+    background-color: transparent;
+    color: white;
+    transition: 0.3s ease-out;
+    border: 2px solid white;
+}
+
+.HistoryListItem:hover{
+    background-color: #FFC920;
+    color: #4C4F50;
 }
 
 .HistoryListItem:last-child{
     margin: 0;
-    border-bottom: none;
+    border-radius: 0 0 10px 10px;
 }
 .HistoryListItem:first-child{
     padding-left: 0;
     margin: 0;
+    border-radius: 10px 10px 0 0;
 }
 .HistoryListItem>th:last-child,.HistoryListItem>td:last-child{
     border-right: none;
 }
 
 #Appointment-content{
-    overflow-x: auto;
+    overflow: auto;
 }
 
 

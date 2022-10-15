@@ -21,8 +21,8 @@ const AppointmentContent = () => {
             }
             items.push(<HistoryListItem key={ `list_item_${i}` } itemprops={{
                 
-                dateTime:<td className='pe-5'>{ "19.02.2020"} <br/>{"12.09.2022"}</td>,  
-                transport:<td className='ps-5 pe-4'>{"nissan Gtd"}<br/>{"О888ОО/88"}</td>,  
+                dateTime:<td>{ "19.02.2020"} <br/>{"12.09.2022"}</td>,  
+                transport:<td>{"nissan Gtd"}<br/>{"О888ОО/88"}</td>,  
                 workType:<td>{"Drag Racing"}</td>,
                 fullname:<td>{"Зубенко Михаил Петрович"}</td>
             }}/>)
@@ -30,7 +30,7 @@ const AppointmentContent = () => {
         return items
     }
     return(
-        <div bordercolor="white" border="1" id="Appointment-content" className="mt-4 d-flex flex-column ms-3 me-3 p-2">
+        <div id="Appointment-content" className="mt-4 d-flex flex-column ms-3 me-3">
             {
                 location.pathname==routes.history? 
                 <table>

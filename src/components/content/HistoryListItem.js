@@ -2,7 +2,7 @@ import React from 'react'
 
 function HistoryListItem(props){
   return (
-    <tr className='HistoryListItem d-flex justify-content-between'>
+    <tr className='HistoryListItem'>
             {
                 props.itemprops.dateTime
             }
