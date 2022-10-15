@@ -4,7 +4,7 @@ import '../../style/appointment-card.css';
 
 const AppointmentCard = () => {
     return(
-        <div id="Appointment-card" className="d-flex m-auto p-3">
+        <div id="Appointment-card" className="d-flex p-3 col-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
