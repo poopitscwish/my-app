@@ -1,12 +1,10 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
 
 import { routes } from '../../globalConst'
 import HistoryListItem from './HistoryListItem.js' 
 import MakeAppointmentForm from './MakeAppointmentForm'
 
-const AppointmentContent = () => {
-    const location = useLocation();
+const AppointmentContent = (props) => {
     const generator=()=>{
         const items =[];
         for(let i=0;i<100;i++){
@@ -30,9 +28,10 @@ const AppointmentContent = () => {
         return items
     }
     return(
-        <div id="Appointment-content" className="mt-4 d-flex flex-column" style={{border:location.pathname==routes.history? '2px solid white':'none'}}>
+        <div id="Appointment-content" className="mt-4 d-flex flex-column"
+        style={{border:props.current_location==routes.history? '2px solid white':'none'}}>
             {
-                location.pathname==routes.history? 
+                props.current_location==routes.history? 
                 <table className='mb-3'>
                     <tbody>
                         {

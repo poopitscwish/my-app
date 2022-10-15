@@ -1,6 +1,6 @@
 #Appointment-card{
     background-color: #4C4F50;
-    box-shadow: 0 0 5px #000000aa;
+    box-shadow: 0 -3px 8px #000000aa;
     width: auto;
     flex-direction: row;
 }
@@ -69,10 +69,34 @@
     margin: 4px;
 }
 
+#form-footer>input, #dateTime>input, #selectors>select{
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+#form-footer>input:focus, #dateTime>input:focus, #selectors>select:focus{
+    border-color: #FFC920;
+}
+
+#form-footer > button{
+    background-color: white;
+    color: #4C4F50;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: 0.3s ease-out;
+    font-size: 1.5em;
+    margin-left: auto;
+}
+
+#form-footer > button:hover{
+    background-color: #FFC920;
+}
+
 #Appointment-content{
     height: calc(100vh - 180px);
     overflow-y: auto;
-    border: 2px solid white;
 }
 
 #Appointment-content::-webkit-scrollbar{

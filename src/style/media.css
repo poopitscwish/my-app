@@ -26,4 +26,8 @@
     #User{
         margin-left: auto;
     }
+
+    #form-footer > button{
+        margin-right: auto;
+    }
 }

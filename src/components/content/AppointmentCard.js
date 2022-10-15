@@ -9,15 +9,32 @@ import { routes } from '../../globalConst';
 
 const AppointmentCard = () => {
     const location = useLocation();
+    const [navStatus, changeNavStatus]=React.useState(window.innerWidth <= 1000? true : false);
+
+    window.onresize=()=>{
+        changeNavStatus(window.innerWidth <= 1000? true : false);
+        if (window.innerWidth > 1000){
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+    };
 
     return(
         <div id="Appointment-card" className="d-flex w-100">
             <div className="d-flex flex-column col-5">
-                <AppointmentNav/>
-                <AppointmentContent />
+                <AppointmentNav nav_status={ navStatus } />
+                {
+                    !navStatus || (navStatus && location.pathname != routes.main)?
+                    <AppointmentContent current_location={ location.pathname } />
+                    :
+                    null
+                }
             </div>
             {
-                window.innerWidth > 1000 || location.pathname == routes.main?
+                !navStatus || location.pathname == routes.main?
                 <Map />
                 :
                 null
