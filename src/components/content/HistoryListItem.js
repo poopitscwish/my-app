@@ -2,7 +2,7 @@ import React from 'react'
 
 function HistoryListItem(props){
   return (
-    <div className='HistoryListItem d-flex flex-row align-items-center'>
+    <tr className='HistoryListItem d-flex justify-content-around'>
             {
                 props.itemprops.dateTime
             }
@@ -19,7 +19,7 @@ function HistoryListItem(props){
                 props.itemprops.fullname
             }
         
-    </div>
+    </tr>
   )
 }
 

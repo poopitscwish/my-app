@@ -35,13 +35,39 @@
 #AppointmentNav{
     overflow-x: auto;
 }
-.HistoryListItem>span{
+.HistoryListItem>th{
+    height: 200%;
+    text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-    margin-right: 30px;
+    font-size: 1.05em;
+    padding: 5px;
 }
-.HistoryListItem>span:last-child{
-    margin-right: 0;
+.HistoryListItem>td{
+    padding: 4px;
+    height: 200%;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
 }
+
+.HistoryListItem{
+    padding-left: 40px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.HistoryListItem:last-child{
+    margin: 0;
+    border-bottom: none;
+}
+.HistoryListItem:first-child{
+    padding-left: 0;
+    margin: 0;
+}
+.HistoryListItem>th:last-child,.HistoryListItem>td:last-child{
+    border-right: none;
+}
+
 
