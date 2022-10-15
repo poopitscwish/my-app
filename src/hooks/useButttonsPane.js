@@ -5,9 +5,7 @@ const useButtonsPane = () => {
     const history = useHistory();
 
     const clickHandler = (routeName) => {
-        if (window.innerWidth <= 1000){
             history.push(routeName);
-        }
     }
 
     return function(template){

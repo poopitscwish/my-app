@@ -9,6 +9,15 @@ import { routes } from '../../globalConst';
 
 const AppointmentCard = () => {
     const location = useLocation();
+    const getComp =()=>{
+        let comp=null
+        if(location.pathname!=routes.main){
+            if(window.innerWidth<=1000){
+                comp = <Map/>
+            }   
+        }
+        return comp;
+    }
     return(
         <div id="Appointment-card" className="d-flex w-100">
             <div className="d-flex flex-column col-5">
@@ -21,10 +30,7 @@ const AppointmentCard = () => {
                 }
             </div>
             {
-                location.pathname != routes.main?
-                null
-                :
-                <Map />
+                getComp()
             }
         </div>
     )
