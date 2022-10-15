@@ -1,4 +1,29 @@
 #Appointment-card{
-    background-color: rgb(255, 255, 255);
+    background-color: #4C4F50;
     box-shadow: 0 0 5px #000000aa;
+}
+#AppointmentNav>button{
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: white;
+    transition: 0.3s ease-out;
+    border: 3px solid transparent;
+}
+#AppointmentNav>button:hover{
+
+    color:#FFC920;
+    
+}
+#AppointmentNav{
+    overflow-x: auto;
+}
+#AppointmentNav::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+}
+#AppointmentNav::-webkit-scrollbar-thumb{
+    background-color: #FFC920;
 }
