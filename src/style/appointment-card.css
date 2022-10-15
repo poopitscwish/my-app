@@ -22,14 +22,14 @@
     color:#FFC920;
 }
 
-#Appointment-card::-webkit-scrollbar,#AppointmentNav::-webkit-scrollbar{
+#Appointment-card::-webkit-scrollbar,#AppointmentNav::-webkit-scrollbar, #Appointment-content::-webkit-scrollbar{
     width: 4px;
     height: 4px;
     background-color: transparent;
 
 }
 
-#Appointment-card::-webkit-scrollbar-thumb,#AppointmentNav::-webkit-scrollbar-thumb{
+#Appointment-card::-webkit-scrollbar-thumb,#AppointmentNav::-webkit-scrollbar-thumb, #Appointment-content::-webkit-scrollbar-thumb{
     background-color: #FFC920;
 }
 #AppointmentNav{
@@ -44,7 +44,6 @@
     padding: 5px;
 }
 .HistoryListItem>td{
-    padding: 4px;
     height: 200%;
     text-align: center;
     color: white;
@@ -68,6 +67,10 @@
 }
 .HistoryListItem>th:last-child,.HistoryListItem>td:last-child{
     border-right: none;
+}
+
+#Appointment-content{
+    overflow-x: auto;
 }
 
 
